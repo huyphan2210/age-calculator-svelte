@@ -1,14 +1,51 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Poppins-BoldItalic;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Poppins-ExtraBoldItalic;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: Poppins-Italic;
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
 body {
   min-height: 100vh;
   margin: 0 auto;
   background-color: hsl(0, 0%, 94%);
   display: grid;
   place-items: center;
+  font-family: Poppins, sans-serif;
 }
 
   #app {
     width: 90%;
     max-width: 1024px;
+    background-color: white;
+    border-radius: 2rem 2rem 10rem 2rem;
   }
 
   footer {
@@ -18,3 +55,9 @@ body {
     transform: translate(-50%);
   }
 
+@media screen and (max-aspect-ratio: 1) and (max-width: 767px) {
+  #app {
+    width: calc(90vw - 4rem);
+    padding: 2rem;
+  }
+}
