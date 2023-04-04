@@ -1,6 +1,20 @@
-footer {
-  position: fixed;
-  left: 50%;
-  bottom: 1vh;
-  transform: translate(-50%);
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 94%);
+  display: grid;
+  place-items: center;
 }
+
+  #app {
+    width: 90%;
+    max-width: 1024px;
+  }
+
+  footer {
+    position: fixed;
+    left: 50%;
+    bottom: 1vh;
+    transform: translate(-50%);
+  }
+
