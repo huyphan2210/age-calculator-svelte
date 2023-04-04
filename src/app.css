@@ -1,0 +1,6 @@
+footer {
+  position: fixed;
+  left: 50%;
+  bottom: 1vh;
+  transform: translate(-50%);
+}
